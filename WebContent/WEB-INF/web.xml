@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>DDoSSecurityWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>AccountController</servlet-name>
+    <servlet-class>com.DDosSecurity.controller.AccountController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountController</servlet-name>
+    <url-pattern>/AccountController/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AccountDetails</servlet-name>
+    <servlet-class>com.DDosSecurity.controller.AccountController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountDetails</servlet-name>
+    <url-pattern>/GetAccountDetails/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DDosAccountDetails</servlet-name>
+    <servlet-class>com.DDosSecurity.controller.DDosAccounts</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DDosAccountDetails</servlet-name>
+    <url-pattern>/DDosAccounts/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginDetails</servlet-name>
+    <servlet-class>com.DDosSecurity.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginDetails</servlet-name>
+    <url-pattern>/LoginController/*</url-pattern>
+  </servlet-mapping>
+</web-app>
