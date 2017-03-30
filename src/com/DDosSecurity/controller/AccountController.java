@@ -95,7 +95,8 @@ public class AccountController extends HttpServlet {
 			GetCon conn;
 			
 			// the mysql insert statement
-		      String query = " insert into \"ddos_security\" (account_name,account_mail,alias,first_address,second_address,city,state,country)values (?, ?, ?,?,?,?,?,?)";
+		      //String query = " insert into \"ddos_security\" (account_name,account_mail,alias,first_address,second_address,city,state,country)values (?, ?, ?,?,?,?,?,?)";
+			String query = "insert into ddos_security (account_name,account_mail,alias,first_address,second_address,city,state,country,services) values (?, ?, ?,?,?,?,?,?,?)";
 		      // create the mysql insert preparedstatement
 		      PreparedStatement preparedStmt = GetCon.getCon().prepareStatement(query);
 		      preparedStmt.setString (1,name);
@@ -106,6 +107,7 @@ public class AccountController extends HttpServlet {
 		      preparedStmt.setString (6,"chennai");
 		      preparedStmt.setString (7,"tamilnadu");
 		      preparedStmt.setString (8,"India");
+			preparedStmt.setString (9,false);
 		      // execute the preparedstatement
 		      preparedStmt.execute();
 		      
