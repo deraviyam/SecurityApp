@@ -107,7 +107,7 @@ public class AccountController extends HttpServlet {
 		      preparedStmt.setString (6,"chennai");
 		      preparedStmt.setString (7,"tamilnadu");
 		      preparedStmt.setString (8,"India");
-			preparedStmt.setString (9,false);
+			preparedStmt.setBoolean (9,false);
 		      // execute the preparedstatement
 		      preparedStmt.execute();
 		      
