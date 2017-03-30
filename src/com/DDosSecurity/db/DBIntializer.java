@@ -16,8 +16,8 @@ String PASSWORD="oracle";*/
 	
 	/* For MYSQL DATABASE*/
 	String DRIVER="org.postgresql.Driver";
-	String CON_STRING="jdbc:postgresql://localhost:3306/security";
+	String CON_STRING="jdbc:postgresql://54.254.182.212:5432/postgres";
 	String USERNAME="postgres";
-	String PASSWORD="root";	
+	String PASSWORD="";
 	
 }
