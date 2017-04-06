@@ -215,7 +215,7 @@
       <input type="text" class="form-control" name="contactnumber" id="contactnumber" placeholder="Enter password">
     </div>
   </div>
-  <!-- <div class="form-group">
+  <!-- test<div class="form-group">
     <label class="control-label col-sm-2" for="address">First Address</label>
     <div class="col-sm-10"> 
       <input type="text" class="form-control" id="address" placeholder="Enter password">
